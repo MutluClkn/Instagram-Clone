@@ -9,6 +9,10 @@ target 'Instagram Clone' do
 	#Appirater
 	pod 'Appirater'
 
+  #SnapKit
+  pod 'SnapKit', '~> 5.6.0'
+  
+
   target 'Instagram CloneTests' do
     inherit! :search_paths
     # Pods for testing

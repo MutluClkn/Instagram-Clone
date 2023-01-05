@@ -36,6 +36,9 @@
 		FA93FA712965BC4C003EC402 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FA93FA702965BC4C003EC402 /* FirebaseDatabase */; };
 		FA93FA732965BC4C003EC402 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FA93FA722965BC4C003EC402 /* FirebaseFirestore */; };
 		FA93FA752965BC4C003EC402 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FA93FA742965BC4C003EC402 /* FirebaseStorage */; };
+		FA93FA792965C9DC003EC402 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA93FA782965C9DC003EC402 /* GoogleService-Info.plist */; };
+		FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427A2966AB3D00958BA5 /* LoginView.swift */; };
+		FAAC427F2966B36700958BA5 /* LoginConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427E2966B36700958BA5 /* LoginConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,9 @@
 		FA93FA592965850F003EC402 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 		FA93FA5D29658638003EC402 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FA93FA60296586AB003EC402 /* MainTabBarConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarConstants.swift; sourceTree = "<group>"; };
+		FA93FA782965C9DC003EC402 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAAC427A2966AB3D00958BA5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FAAC427E2966B36700958BA5 /* LoginConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConstants.swift; sourceTree = "<group>"; };
 		FB39DE2C223CFE5FC108839C /* Pods-Instagram CloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram CloneTests.debug.xcconfig"; path = "Target Support Files/Pods-Instagram CloneTests/Pods-Instagram CloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,9 +209,9 @@
 		FA93FA3A29657B91003EC402 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FA93FA5129658290003EC402 /* Core Bars */,
+				FA93FA5129658290003EC402 /* CoreBars */,
 				FA93FA4829657DE3003EC402 /* Auth */,
-				FA93FA4729657DBA003EC402 /* Core Tabs */,
+				FA93FA4729657DBA003EC402 /* CoreTabs */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -213,6 +219,7 @@
 		FA93FA3B29657BA0003EC402 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAAC42792966AACD00958BA5 /* AuthViews */,
 				FA93FA1329657B43003EC402 /* Assets.xcassets */,
 				FA93FA3E29657BB8003EC402 /* Storyboards */,
 			);
@@ -229,6 +236,7 @@
 		FA93FA3D29657BA9003EC402 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FA93FA782965C9DC003EC402 /* GoogleService-Info.plist */,
 				FA93FA0A29657B41003EC402 /* AppDelegate.swift */,
 				FA93FA0C29657B41003EC402 /* SceneDelegate.swift */,
 			);
@@ -243,13 +251,13 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		FA93FA4729657DBA003EC402 /* Core Tabs */ = {
+		FA93FA4729657DBA003EC402 /* CoreTabs */ = {
 			isa = PBXGroup;
 			children = (
 				FA93FA5D29658638003EC402 /* MainTabBarController.swift */,
 				FA93FA5B29658605003EC402 /* Tabs */,
 			);
-			path = "Core Tabs";
+			path = CoreTabs;
 			sourceTree = "<group>";
 		};
 		FA93FA4829657DE3003EC402 /* Auth */ = {
@@ -261,14 +269,14 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		FA93FA5129658290003EC402 /* Core Bars */ = {
+		FA93FA5129658290003EC402 /* CoreBars */ = {
 			isa = PBXGroup;
 			children = (
-				FA93FA58296584FD003EC402 /* Post */,
 				FA93FA5229658305003EC402 /* MessagesViewController.swift */,
 				FA93FA542965831C003EC402 /* NotificationsViewController.swift */,
+				FA93FA58296584FD003EC402 /* Post */,
 			);
-			path = "Core Bars";
+			path = CoreBars;
 			sourceTree = "<group>";
 		};
 		FA93FA58296584FD003EC402 /* Post */ = {
@@ -295,9 +303,34 @@
 		FA93FA5F2965866E003EC402 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				FAAC427D2966B34F00958BA5 /* Views */,
+				FAAC427C2966B32700958BA5 /* CoreTabs */,
 				FA93FA60296586AB003EC402 /* MainTabBarConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		FAAC42792966AACD00958BA5 /* AuthViews */ = {
+			isa = PBXGroup;
+			children = (
+				FAAC427A2966AB3D00958BA5 /* LoginView.swift */,
+			);
+			path = AuthViews;
+			sourceTree = "<group>";
+		};
+		FAAC427C2966B32700958BA5 /* CoreTabs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreTabs;
+			sourceTree = "<group>";
+		};
+		FAAC427D2966B34F00958BA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAAC427E2966B36700958BA5 /* LoginConstants.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +455,7 @@
 			files = (
 				FA93FA1729657B43003EC402 /* LaunchScreen.storyboard in Resources */,
 				FA93FA1429657B43003EC402 /* Assets.xcassets in Resources */,
+				FA93FA792965C9DC003EC402 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +586,7 @@
 				FA93FA5729658345003EC402 /* PostEditorViewController.swift in Sources */,
 				FA93FA5329658305003EC402 /* MessagesViewController.swift in Sources */,
 				FA93FA502965825A003EC402 /* RegisterViewController.swift in Sources */,
+				FAAC427F2966B36700958BA5 /* LoginConstants.swift in Sources */,
 				FA93FA4429657C1C003EC402 /* ProfileViewController.swift in Sources */,
 				FA93FA4029657C00003EC402 /* ExploreViewController.swift in Sources */,
 				FA93FA0F29657B41003EC402 /* HomeViewController.swift in Sources */,
@@ -563,6 +598,7 @@
 				FA93FA4C29658242003EC402 /* ShopViewController.swift in Sources */,
 				FA93FA0D29657B41003EC402 /* SceneDelegate.swift in Sources */,
 				FA93FA5A2965850F003EC402 /* PublishPostViewController.swift in Sources */,
+				FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */,
 				FA93FA61296586AB003EC402 /* MainTabBarConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
