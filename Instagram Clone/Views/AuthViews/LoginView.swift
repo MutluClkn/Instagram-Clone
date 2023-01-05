@@ -5,19 +5,16 @@
 //  Created by Mutlu Çalkan on 5.01.2023.
 //
 
-//-----------------------------
-//MARK: - Frameworks
-//-----------------------------
 
+//MARK: - Frameworks
 import UIKit
 import SnapKit
 
-//-----------------------------
-//MARK: - LoginView
-//-----------------------------
 
+//MARK: - LoginView
 class LoginView: UIViewController {
 
+    
     //-----------------------------
     //MARK: - Properties
     //-----------------------------
@@ -28,7 +25,7 @@ class LoginView: UIViewController {
         return view
     }()
     
-    private lazy var usernameEmailTextField : UITextField = {
+    lazy var usernameEmailTextField : UITextField = {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
         textField.attributedPlaceholder = NSAttributedString(
@@ -38,12 +35,15 @@ class LoginView: UIViewController {
         textField.returnKeyType = .next
         textField.autocapitalizationType = .none
         textField.autocorrectionType = .no
+        textField.keyboardType = .emailAddress
+        textField.layer.borderWidth = 1.0
+        textField.layer.borderColor = UIColor.secondaryLabel.cgColor
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.layer.cornerRadius = LoginConstants.cornerRadius
         return textField
     }()
     
-    private lazy var passwordTextField : UITextField = {
+    lazy var passwordTextField : UITextField = {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
         textField.attributedPlaceholder = NSAttributedString(
@@ -51,15 +51,17 @@ class LoginView: UIViewController {
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray])
         textField.backgroundColor = .quaternarySystemFill
         textField.isSecureTextEntry = true
-        textField.returnKeyType = .next
+        textField.returnKeyType = .go
         textField.autocapitalizationType = .none
         textField.autocorrectionType = .no
+        textField.layer.borderWidth = 1.0
+        textField.layer.borderColor = UIColor.secondaryLabel.cgColor
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.layer.cornerRadius = LoginConstants.cornerRadius
         return textField
     }()
     
-    private lazy var logInButton : UIButton = {
+    lazy var logInButton : UIButton = {
         let button = UIButton()
         button.setTitle("Log In", for: .normal)
         button.layer.cornerRadius = LoginConstants.cornerRadius
@@ -79,7 +81,7 @@ class LoginView: UIViewController {
         return label
     }()
     
-    private lazy var forgotPasswordButton : UIButton = {
+    lazy var forgotPasswordButton : UIButton = {
         let button = UIButton()
         button.setTitle("Recover password.", for: .normal)
         button.setTitleColor(.label, for: .normal)
@@ -108,7 +110,7 @@ class LoginView: UIViewController {
         return label
     }()
     
-    private lazy var signUpButton : UIButton = {
+    lazy var signUpButton : UIButton = {
         let button = UIButton()
         button.setTitle("Sign up.", for: .normal)
         button.setTitleColor(.label, for: .normal)
@@ -152,6 +154,7 @@ class LoginView: UIViewController {
     }()
 
     
+    
     //-----------------------------
     //MARK: - Lifecycle
     //-----------------------------
@@ -160,6 +163,31 @@ class LoginView: UIViewController {
         super.viewDidLoad()
         setupViews()
     }
+    
+    
+    
+    
+    //-----------------------------
+    //MARK: - Button Actions
+    //-----------------------------
+    
+    //Login Button
+    @objc func loginButtonPressed(){
+        
+    }
+    
+    //Forgot Password Button
+    @objc func forgotPasswordButtonPressed(){
+        
+    }
+    
+    //Sign Up Button
+    @objc func signUpButtonPressed(){
+        
+    }
+    
+    
+    
     
     //-----------------------------
     //MARK: - Setup View Constraints
