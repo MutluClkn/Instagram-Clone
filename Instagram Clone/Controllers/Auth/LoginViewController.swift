@@ -17,21 +17,14 @@ final class LoginViewController: LoginView {
     //MARK: - Properties
     //-----------------------------
     
-    //let loginView = LoginView()
     
     
     //-----------------------------
     //MARK: - Lifecycle
     //-----------------------------
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .systemBackground
     }
-    
-    override func loadView() {
-        super.loadView()
-       // self.view = loginView
-    }
-
 }

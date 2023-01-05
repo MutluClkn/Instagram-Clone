@@ -22,26 +22,40 @@ class LoginView: UIViewController {
     //MARK: - Properties
     //-----------------------------
     
+    private lazy var instagramLogo : UIImageView = {
+        let view = UIImageView(image: UIImage(named: "logo"))
+        view.contentMode = .scaleAspectFit
+        return view
+    }()
+    
     private lazy var usernameEmailTextField : UITextField = {
         let textField = UITextField()
+        textField.borderStyle = .roundedRect
+        textField.attributedPlaceholder = NSAttributedString(
+            string: "Username or Email",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray])
+        textField.backgroundColor = .quaternarySystemFill
         textField.returnKeyType = .next
         textField.autocapitalizationType = .none
         textField.autocorrectionType = .no
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.layer.cornerRadius = LoginConstants.cornerRadius
-        //addSubview(textField)
         return textField
     }()
     
     private lazy var passwordTextField : UITextField = {
         let textField = UITextField()
+        textField.borderStyle = .roundedRect
+        textField.attributedPlaceholder = NSAttributedString(
+            string: "Password",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemGray])
+        textField.backgroundColor = .quaternarySystemFill
         textField.isSecureTextEntry = true
         textField.returnKeyType = .next
         textField.autocapitalizationType = .none
         textField.autocorrectionType = .no
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.layer.cornerRadius = LoginConstants.cornerRadius
-        //addSubview(textField)
         return textField
     }()
     
@@ -52,48 +66,91 @@ class LoginView: UIViewController {
         button.backgroundColor = .systemBlue
         button.setTitleColor(.white, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        //addSubview(button)
         return button
     }()
     
-    private lazy var termsButton : UIButton = {
+    private lazy var forgotPasswordLabel : UILabel = {
+        let label = UILabel()
+        label.text = "Forgot your login details?"
+        label.textColor = .label
+        label.textAlignment = .right
+        label.font = .systemFont(ofSize: 14, weight: .regular)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private lazy var forgotPasswordButton : UIButton = {
         let button = UIButton()
-       // addSubview(button)
+        button.setTitle("Recover password.", for: .normal)
+        button.setTitleColor(.label, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
+        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
-    private lazy var privacyButton : UIButton = {
-        let button = UIButton()
-       // addSubview(button)
-        return button
+    private lazy var seperatorLabel : UILabel = {
+        let label = UILabel()
+        label.text = "OR"
+        label.textColor = .label
+        label.textAlignment = .center
+        label.font = .systemFont(ofSize: 14, weight: .regular)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
     
     private lazy var createAccountLabel : UILabel = {
         let label = UILabel()
         label.text = "Don't you have an account?"
         label.textColor = .label
+        label.textAlignment = .right
         label.font = .systemFont(ofSize: 14, weight: .regular)
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
-    private lazy var registerButton : UIButton = {
+    private lazy var signUpButton : UIButton = {
         let button = UIButton()
-        button.setTitle("Register.", for: .normal)
-        button.setTitleColor(.systemBlue, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-
-       // addSubview(button)
+        button.setTitle("Sign up.", for: .normal)
+        button.setTitleColor(.label, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
+        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
-    private lazy var headerView : UIView = {
-        let view = UIView()
-        view.clipsToBounds = true
-        view.backgroundColor = .yellow
-        //addSubview(view)
-        return view
+    private lazy var loginStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [usernameEmailTextField, passwordTextField, logInButton])
+        stackView.axis = .vertical
+        stackView.distribution = .equalCentering
+        stackView.alignment = .center
+        stackView.spacing = 15
+        return stackView
     }()
     
+    private lazy var forgotPassStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [forgotPasswordLabel, forgotPasswordButton])
+        stackView.axis = .horizontal
+        stackView.distribution = .fillProportionally
+        stackView.spacing = 10
+        return stackView
+    }()
+    
+    private lazy var signUpStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [createAccountLabel, signUpButton])
+        stackView.axis = .horizontal
+        stackView.distribution = .fillProportionally
+        stackView.spacing = 10
+        return stackView
+    }()
+    
+    private lazy var authStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [forgotPassStackView, seperatorLabel, signUpStackView])
+        stackView.axis = .vertical
+        stackView.distribution = .equalCentering
+        stackView.alignment = .center
+        stackView.spacing = 10
+        return stackView
+    }()
+
     
     //-----------------------------
     //MARK: - Lifecycle
@@ -103,15 +160,6 @@ class LoginView: UIViewController {
         super.viewDidLoad()
         setupViews()
     }
-    /*
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupViews()
-    }
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    */
     
     //-----------------------------
     //MARK: - Setup View Constraints
@@ -119,60 +167,48 @@ class LoginView: UIViewController {
     
     private func setupViews(){
         //addSubviews
-        view.addSubview(usernameEmailTextField)
-        view.addSubview(passwordTextField)
-        view.addSubview(logInButton)
-        view.addSubview(termsButton)
-        view.addSubview(privacyButton)
-        view.addSubview(createAccountLabel)
-        view.addSubview(registerButton)
-        view.addSubview(headerView)
-        
+        view.addSubview(instagramLogo)
+        view.addSubview(loginStackView)
+        view.addSubview(authStackView)
         
         //Header View
-        headerView.snp.makeConstraints { make in
-            make.top.equalTo(view.snp_topMargin)
-            make.left.equalTo(view.safeAreaInsets.left)
-            make.right.equalTo(view.safeAreaInsets.right)
-            make.height.equalTo(view.frame.size.height * 0.3)
+        instagramLogo.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(30)
+            make.left.equalTo(view.safeAreaLayoutGuide).offset(80)
+            make.right.equalTo(view.safeAreaLayoutGuide).offset(-80)
+            make.height.equalTo(view.frame.size.height * 0.15)
+        }
+        
+        //Login Stack View
+        loginStackView.snp.makeConstraints { make in
+            make.top.equalTo(instagramLogo.snp_bottomMargin).offset(20)
+            make.left.equalTo(view.safeAreaLayoutGuide).offset(20)
+            make.right.equalTo(view.safeAreaLayoutGuide).offset(-20)
+        }
+        
+        //Auth Stack View (Sign Up - Forgot Passowrd)
+        authStackView.snp.makeConstraints { make in
+            make.top.equalTo(loginStackView.snp_bottomMargin).offset(30)
+            make.left.equalTo(view.safeAreaLayoutGuide).offset(20)
+            make.right.equalTo(view.safeAreaLayoutGuide).offset(-20)
         }
         
         //Username-Email TextField
         usernameEmailTextField.snp.makeConstraints { make in
-            make.top.equalTo(headerView.snp_bottomMargin).offset(40)
-            make.left.equalTo(view.safeAreaInsets.left).offset(20)
-            make.right.equalTo(view.safeAreaInsets.right).offset(-20)
-            make.height.equalTo(LoginConstants.textFieldHeight)
+            make.top.leading.trailing.equalTo(loginStackView.safeAreaLayoutGuide)
+            make.height.equalTo(LoginConstants.height)
         }
         
         //Password TextField
         passwordTextField.snp.makeConstraints { make in
-            make.top.equalTo(usernameEmailTextField.snp_bottomMargin).offset(15)
-            make.left.equalTo(view.safeAreaInsets.left).offset(20)
-            make.right.equalTo(view.safeAreaInsets.right).offset(-20)
-            make.height.equalTo(LoginConstants.textFieldHeight)
+            make.leading.trailing.equalTo(loginStackView.safeAreaLayoutGuide)
+            make.height.equalTo(LoginConstants.height)
         }
         
         //Login Button
         logInButton.snp.makeConstraints { make in
-            make.top.equalTo(passwordTextField.snp_bottomMargin).offset(30)
-            make.centerX.equalTo(view.snp_centerXWithinMargins)
-            make.height.equalTo(LoginConstants.buttonHeight)
-            make.width.equalTo(LoginConstants.buttonWidth)
-        }
-        
-        //CreateAccount Label
-        createAccountLabel.snp.makeConstraints { make in
-            make.top.equalTo(logInButton.snp_bottomMargin).offset(30)
-            make.left.equalTo(view.safeAreaInsets.left).offset(20)
-            make.height.equalTo(LoginConstants.buttonHeight-10)
-        }
-        
-        //Register Button
-        registerButton.snp.makeConstraints { make in
-            make.centerY.equalTo(createAccountLabel.snp_centerYWithinMargins)
-            make.left.equalTo(createAccountLabel.snp_rightMargin).offset(15)
-            make.height.equalTo(LoginConstants.buttonHeight-10)
+            make.bottom.leading.trailing.equalTo(loginStackView.safeAreaLayoutGuide)
+            make.height.equalTo(LoginConstants.height)
         }
     }
 

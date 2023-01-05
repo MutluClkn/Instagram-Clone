@@ -8,8 +8,6 @@
 import Foundation
 
 struct LoginConstants {
-    static let cornerRadius = 8.0
-    static let textFieldHeight = 38
-    static let buttonHeight = 40
-    static let buttonWidth = 90
+    static let cornerRadius = 5.0
+    static let height = 45
 }
