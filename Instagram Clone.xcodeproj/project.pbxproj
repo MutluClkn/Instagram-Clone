@@ -37,6 +37,7 @@
 		FA93FA732965BC4C003EC402 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FA93FA722965BC4C003EC402 /* FirebaseFirestore */; };
 		FA93FA752965BC4C003EC402 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FA93FA742965BC4C003EC402 /* FirebaseStorage */; };
 		FAA1994B296808930022E275 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1994A296808930022E275 /* BaseViewController.swift */; };
+		FAA1994F29680AF90022E275 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1994E29680AF90022E275 /* AuthManager.swift */; };
 		FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427A2966AB3D00958BA5 /* LoginView.swift */; };
 		FAAC427F2966B36700958BA5 /* LoginConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427E2966B36700958BA5 /* LoginConstants.swift */; };
 		FAAC42842967071B00958BA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAC42832967071B00958BA5 /* GoogleService-Info.plist */; };
@@ -93,6 +94,7 @@
 		FA93FA5D29658638003EC402 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FA93FA60296586AB003EC402 /* MainTabBarConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarConstants.swift; sourceTree = "<group>"; };
 		FAA1994A296808930022E275 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FAA1994E29680AF90022E275 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		FAAC427A2966AB3D00958BA5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FAAC427E2966B36700958BA5 /* LoginConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConstants.swift; sourceTree = "<group>"; };
 		FAAC42832967071B00958BA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 		FA93FA3D29657BA9003EC402 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FAA1994D29680AD50022E275 /* Firebase */,
 				FAAC42832967071B00958BA5 /* GoogleService-Info.plist */,
 				FA93FA0A29657B41003EC402 /* AppDelegate.swift */,
 				FA93FA0C29657B41003EC402 /* SceneDelegate.swift */,
@@ -319,6 +322,14 @@
 				FAA1994A296808930022E275 /* BaseViewController.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		FAA1994D29680AD50022E275 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				FAA1994E29680AF90022E275 /* AuthManager.swift */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		FAAC42792966AACD00958BA5 /* AuthViews */ = {
@@ -608,6 +619,7 @@
 				FA93FA552965831C003EC402 /* NotificationsViewController.swift in Sources */,
 				FA93FA5E29658638003EC402 /* MainTabBarController.swift in Sources */,
 				FA93FA4C29658242003EC402 /* ShopViewController.swift in Sources */,
+				FAA1994F29680AF90022E275 /* AuthManager.swift in Sources */,
 				FA93FA0D29657B41003EC402 /* SceneDelegate.swift in Sources */,
 				FA93FA5A2965850F003EC402 /* PublishPostViewController.swift in Sources */,
 				FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */,

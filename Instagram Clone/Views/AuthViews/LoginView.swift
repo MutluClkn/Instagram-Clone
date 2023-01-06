@@ -168,27 +168,6 @@ class LoginView: BaseViewController {
     
     
     //-----------------------------
-    //MARK: - Button Actions
-    //-----------------------------
-    
-    //Login Button
-    @objc func loginButtonPressed(){
-        
-    }
-    
-    //Forgot Password Button
-    @objc func forgotPasswordButtonPressed(){
-        
-    }
-    
-    //Sign Up Button
-    @objc func signUpButtonPressed(){
-        
-    }
-    
-    
-    
-    //-----------------------------
     //MARK: - Setup View Constraints
     //-----------------------------
     
