@@ -40,6 +40,8 @@
 		FAA1994F29680AF90022E275 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1994E29680AF90022E275 /* AuthManager.swift */; };
 		FAA1995129681B340022E275 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1995029681B340022E275 /* SignUpView.swift */; };
 		FAA1995429681E2A0022E275 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1995329681E2A0022E275 /* ProfileView.swift */; };
+		FAA19957296851950022E275 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA19956296851950022E275 /* DatabaseManager.swift */; };
+		FAA1995A296857A90022E275 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA19959296857A90022E275 /* String.swift */; };
 		FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427A2966AB3D00958BA5 /* LoginView.swift */; };
 		FAAC427F2966B36700958BA5 /* AuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427E2966B36700958BA5 /* AuthConstants.swift */; };
 		FAAC42842967071B00958BA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAC42832967071B00958BA5 /* GoogleService-Info.plist */; };
@@ -99,6 +101,8 @@
 		FAA1994E29680AF90022E275 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		FAA1995029681B340022E275 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FAA1995329681E2A0022E275 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FAA19956296851950022E275 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		FAA19959296857A90022E275 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		FAAC427A2966AB3D00958BA5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FAAC427E2966B36700958BA5 /* AuthConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConstants.swift; sourceTree = "<group>"; };
 		FAAC42832967071B00958BA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 		FA93FA3D29657BA9003EC402 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FAA199582968579C0022E275 /* Extensions */,
 				FAA1994D29680AD50022E275 /* Firebase */,
 				FAAC42832967071B00958BA5 /* GoogleService-Info.plist */,
 				FA93FA0A29657B41003EC402 /* AppDelegate.swift */,
@@ -333,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA1994E29680AF90022E275 /* AuthManager.swift */,
+				FAA19956296851950022E275 /* DatabaseManager.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -343,6 +349,14 @@
 				FAA1995329681E2A0022E275 /* ProfileView.swift */,
 			);
 			path = CoreTabsViews;
+			sourceTree = "<group>";
+		};
+		FAA199582968579C0022E275 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAA19959296857A90022E275 /* String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FAAC42792966AACD00958BA5 /* AuthViews */ = {
@@ -621,6 +635,7 @@
 			files = (
 				FA93FA5729658345003EC402 /* PostEditorViewController.swift in Sources */,
 				FAA1995129681B340022E275 /* SignUpView.swift in Sources */,
+				FAA1995A296857A90022E275 /* String.swift in Sources */,
 				FA93FA5329658305003EC402 /* MessagesViewController.swift in Sources */,
 				FA93FA502965825A003EC402 /* SignUpViewController.swift in Sources */,
 				FAA1994B296808930022E275 /* BaseViewController.swift in Sources */,
@@ -631,6 +646,7 @@
 				FA93FA0B29657B41003EC402 /* AppDelegate.swift in Sources */,
 				FA93FA4E29658253003EC402 /* LoginViewController.swift in Sources */,
 				FA93FA4A29658202003EC402 /* ReelsViewController.swift in Sources */,
+				FAA19957296851950022E275 /* DatabaseManager.swift in Sources */,
 				FA93FA552965831C003EC402 /* NotificationsViewController.swift in Sources */,
 				FA93FA5E29658638003EC402 /* MainTabBarController.swift in Sources */,
 				FA93FA4C29658242003EC402 /* ShopViewController.swift in Sources */,

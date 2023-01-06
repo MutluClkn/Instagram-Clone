@@ -9,18 +9,53 @@
 import Foundation
 import FirebaseAuth
 
+
 //MARK: - AuthManager
 class AuthManager: BaseViewController {
     //Shared
     static let shared = AuthManager()
+    //Auth
+    private let auth = Auth.auth()
+    
     
     
     //-----------------------------
     //MARK: - Sign Up
     //-----------------------------
     
-    public func signUp(username: String, email: String, password: String){
+    public func signUp(email: String, username: String, password: String, completion: @escaping (Result<Bool, Error>) -> Void){
         
+        //Check if username-email is available to create a new account.
+        DatabaseManager.shared.createNewUser(email: email, username: username) { result in
+            
+            switch result{
+            case.success(_):
+                
+                //Create a new account
+                self.auth.createUser(withEmail: email, password: password){ result, error in
+                    if let error {
+                        completion(.failure(error))
+                        return
+                    }
+                    if result != nil {
+                        completion(.success(true))
+                        DatabaseManager.shared.insertNewUser(email: email, username: username) { result in
+                            switch result{
+                            case.success(_):
+                                completion(.success(true))
+                                return
+                            case.failure(let error):
+                                completion(.failure(error))
+                                return
+                            }
+                        }
+                    }
+                }
+            case.failure(let error):
+                completion(.failure(error))
+                return
+            }
+        }
     }
     
     
@@ -34,7 +69,7 @@ class AuthManager: BaseViewController {
         
         //E-mail Login
         if let email {
-            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+            auth.signIn(withEmail: email, password: password) { authResult, error in
                 if let error {
                     //self.alertMessage(alertTitle: "Error", alertMesssage: error.localizedDescription)
                     completion(.failure(error))
@@ -46,12 +81,12 @@ class AuthManager: BaseViewController {
             }
         }
         
-        
         //Username Login
         else if let username {
             print(username)
         }
     }
+    
     
     
     //-----------------------------
@@ -60,7 +95,7 @@ class AuthManager: BaseViewController {
     
     public func signOut(){
         do {
-            try Auth.auth().signOut()
+            try auth.signOut()
             print("Sign Out Success")
         } catch let signOutError as NSError {
             print("Error signing out: %@", signOutError)

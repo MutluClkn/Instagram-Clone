@@ -108,7 +108,7 @@ class SignUpView: BaseViewController {
     }()
     
     private lazy var signUpStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [emailTextField, usernameTextField, passwordTextField,  signUpButton])
+        let stackView = UIStackView(arrangedSubviews: [emailTextField, usernameTextField, passwordTextField, rePasswordTextField,  signUpButton])
         stackView.axis = .vertical
         stackView.distribution = .equalCentering
         stackView.alignment = .center
@@ -140,7 +140,7 @@ class SignUpView: BaseViewController {
         
         //Header View
         instagramLogo.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide).offset(30)
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(20)
             make.left.equalTo(view.safeAreaLayoutGuide).offset(100)
             make.right.equalTo(view.safeAreaLayoutGuide).offset(-100)
             make.height.equalTo(view.frame.size.height * 0.12)
@@ -170,12 +170,12 @@ class SignUpView: BaseViewController {
             make.leading.trailing.equalTo(signUpStackView.safeAreaLayoutGuide)
             make.height.equalTo(AuthConstants.textFieldHeight)
         }
-        /*
+        
         //Confirm Password TextField
         rePasswordTextField.snp.makeConstraints { make in
             make.leading.trailing.equalTo(signUpStackView.safeAreaLayoutGuide)
-            make.height.equalTo(LoginConstants.textFieldHeight)
-        }*/
+            make.height.equalTo(AuthConstants.textFieldHeight)
+        }
         
         //Login Button
         signUpButton.snp.makeConstraints { make in
