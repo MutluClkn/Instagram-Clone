@@ -38,6 +38,13 @@ final class LoginViewController: LoginView {
     //MARK: - Button Actions
     //-----------------------------
     
+    //Button Actions
+    private func buttonActions(){
+        logInButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
+        forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonPressed), for: .touchUpInside)
+        signUpButton.addTarget(self, action: #selector(signUpButtonPressed), for: .touchUpInside)
+    }
+    
     //Login Button
     @objc func loginButtonPressed(){
         checkAuth()
@@ -50,20 +57,15 @@ final class LoginViewController: LoginView {
     
     //Sign Up Button
     @objc func signUpButtonPressed(){
-        
+        let vc = SignUpViewController()
+        vc.title = "Sign Up"
+        self.present(UINavigationController(rootViewController: vc), animated: true )
     }
     
     
     //-----------------------------
-    //MARK: - Methods
+    //MARK: - CheckAuth
     //-----------------------------
-    
-    //Button Actions
-    private func buttonActions(){
-        logInButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
-        forgotPasswordButton.addTarget(self, action: #selector(forgotPasswordButtonPressed), for: .touchUpInside)
-        signUpButton.addTarget(self, action: #selector(signUpButtonPressed), for: .touchUpInside)
-    }
     
     //Check user auth
     private func checkAuth(){
@@ -96,7 +98,7 @@ final class LoginViewController: LoginView {
         self.present(alertController, animated: false, completion: nil)
         
         //AuthManager
-        AuthManager.shared.login(username: username, email: email, password: password) { result in
+        AuthManager.shared.logIn(username: username, email: email, password: password) { result in
             DispatchQueue.main.async {
                 switch result{
                 case .success(_):

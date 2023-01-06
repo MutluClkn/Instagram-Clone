@@ -36,10 +36,11 @@ class LoginView: BaseViewController {
         textField.autocapitalizationType = .none
         textField.autocorrectionType = .no
         textField.keyboardType = .emailAddress
+        textField.clearButtonMode = .whileEditing
         textField.layer.borderWidth = 1.0
         textField.layer.borderColor = UIColor.secondaryLabel.cgColor
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.layer.cornerRadius = LoginConstants.cornerRadius
+        textField.layer.cornerRadius = AuthConstants.cornerRadius
         return textField
     }()
     
@@ -54,17 +55,18 @@ class LoginView: BaseViewController {
         textField.returnKeyType = .go
         textField.autocapitalizationType = .none
         textField.autocorrectionType = .no
+        textField.clearButtonMode = .whileEditing
         textField.layer.borderWidth = 1.0
         textField.layer.borderColor = UIColor.secondaryLabel.cgColor
         textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.layer.cornerRadius = LoginConstants.cornerRadius
+        textField.layer.cornerRadius = AuthConstants.cornerRadius
         return textField
     }()
     
     lazy var logInButton : UIButton = {
         let button = UIButton()
         button.setTitle("Log In", for: .normal)
-        button.layer.cornerRadius = LoginConstants.cornerRadius
+        button.layer.cornerRadius = AuthConstants.cornerRadius
         button.backgroundColor = .systemBlue
         button.setTitleColor(.white, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -73,7 +75,7 @@ class LoginView: BaseViewController {
     
     private lazy var forgotPasswordLabel : UILabel = {
         let label = UILabel()
-        label.text = "Forgot your login details?"
+        label.text = "Forgot your log in details?"
         label.textColor = .label
         label.textAlignment = .right
         label.font = .systemFont(ofSize: 14, weight: .regular)
@@ -180,14 +182,14 @@ class LoginView: BaseViewController {
         //Header View
         instagramLogo.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).offset(30)
-            make.left.equalTo(view.safeAreaLayoutGuide).offset(80)
-            make.right.equalTo(view.safeAreaLayoutGuide).offset(-80)
-            make.height.equalTo(view.frame.size.height * 0.15)
+            make.left.equalTo(view.safeAreaLayoutGuide).offset(100)
+            make.right.equalTo(view.safeAreaLayoutGuide).offset(-100)
+            make.height.equalTo(view.frame.size.height * 0.12)
         }
         
         //Login Stack View
         loginStackView.snp.makeConstraints { make in
-            make.top.equalTo(instagramLogo.snp_bottomMargin).offset(20)
+            make.top.equalTo(instagramLogo.snp_bottomMargin).offset(30)
             make.left.equalTo(view.safeAreaLayoutGuide).offset(20)
             make.right.equalTo(view.safeAreaLayoutGuide).offset(-20)
         }
@@ -202,19 +204,19 @@ class LoginView: BaseViewController {
         //Username-Email TextField
         usernameEmailTextField.snp.makeConstraints { make in
             make.top.leading.trailing.equalTo(loginStackView.safeAreaLayoutGuide)
-            make.height.equalTo(LoginConstants.height)
+            make.height.equalTo(AuthConstants.textFieldHeight)
         }
         
         //Password TextField
         passwordTextField.snp.makeConstraints { make in
             make.leading.trailing.equalTo(loginStackView.safeAreaLayoutGuide)
-            make.height.equalTo(LoginConstants.height)
+            make.height.equalTo(AuthConstants.textFieldHeight)
         }
         
         //Login Button
         logInButton.snp.makeConstraints { make in
             make.bottom.leading.trailing.equalTo(loginStackView.safeAreaLayoutGuide)
-            make.height.equalTo(LoginConstants.height)
+            make.height.equalTo(AuthConstants.buttonHeight)
         }
     }
 

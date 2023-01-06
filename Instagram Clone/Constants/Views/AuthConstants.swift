@@ -1,5 +1,5 @@
 //
-//  LoginConstants.swift
+//  AuthConstants.swift
 //  Instagram Clone
 //
 //  Created by Mutlu Çalkan on 5.01.2023.
@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct LoginConstants {
+struct AuthConstants {
     static let cornerRadius = 5.0
-    static let height = 45
+    static let buttonHeight = 45
+    static let textFieldHeight = 45
 }

@@ -23,7 +23,7 @@
 		FA93FA4A29658202003EC402 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA4929658202003EC402 /* ReelsViewController.swift */; };
 		FA93FA4C29658242003EC402 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA4B29658242003EC402 /* ShopViewController.swift */; };
 		FA93FA4E29658253003EC402 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA4D29658253003EC402 /* LoginViewController.swift */; };
-		FA93FA502965825A003EC402 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA4F2965825A003EC402 /* RegisterViewController.swift */; };
+		FA93FA502965825A003EC402 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA4F2965825A003EC402 /* SignUpViewController.swift */; };
 		FA93FA5329658305003EC402 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA5229658305003EC402 /* MessagesViewController.swift */; };
 		FA93FA552965831C003EC402 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA542965831C003EC402 /* NotificationsViewController.swift */; };
 		FA93FA5729658345003EC402 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA5629658345003EC402 /* PostEditorViewController.swift */; };
@@ -38,8 +38,10 @@
 		FA93FA752965BC4C003EC402 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FA93FA742965BC4C003EC402 /* FirebaseStorage */; };
 		FAA1994B296808930022E275 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1994A296808930022E275 /* BaseViewController.swift */; };
 		FAA1994F29680AF90022E275 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1994E29680AF90022E275 /* AuthManager.swift */; };
+		FAA1995129681B340022E275 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1995029681B340022E275 /* SignUpView.swift */; };
+		FAA1995429681E2A0022E275 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1995329681E2A0022E275 /* ProfileView.swift */; };
 		FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427A2966AB3D00958BA5 /* LoginView.swift */; };
-		FAAC427F2966B36700958BA5 /* LoginConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427E2966B36700958BA5 /* LoginConstants.swift */; };
+		FAAC427F2966B36700958BA5 /* AuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427E2966B36700958BA5 /* AuthConstants.swift */; };
 		FAAC42842967071B00958BA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAC42832967071B00958BA5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -86,7 +88,7 @@
 		FA93FA4929658202003EC402 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
 		FA93FA4B29658242003EC402 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		FA93FA4D29658253003EC402 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FA93FA4F2965825A003EC402 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FA93FA4F2965825A003EC402 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FA93FA5229658305003EC402 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		FA93FA542965831C003EC402 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		FA93FA5629658345003EC402 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
@@ -95,8 +97,10 @@
 		FA93FA60296586AB003EC402 /* MainTabBarConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarConstants.swift; sourceTree = "<group>"; };
 		FAA1994A296808930022E275 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FAA1994E29680AF90022E275 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		FAA1995029681B340022E275 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		FAA1995329681E2A0022E275 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		FAAC427A2966AB3D00958BA5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		FAAC427E2966B36700958BA5 /* LoginConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConstants.swift; sourceTree = "<group>"; };
+		FAAC427E2966B36700958BA5 /* AuthConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConstants.swift; sourceTree = "<group>"; };
 		FAAC42832967071B00958BA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB39DE2C223CFE5FC108839C /* Pods-Instagram CloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram CloneTests.debug.xcconfig"; path = "Target Support Files/Pods-Instagram CloneTests/Pods-Instagram CloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,7 +217,7 @@
 		FA93FA3A29657B91003EC402 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FAA1994C296808E30022E275 /* General */,
+				FAA1994C296808E30022E275 /* Base */,
 				FA93FA5129658290003EC402 /* CoreBars */,
 				FA93FA4829657DE3003EC402 /* Auth */,
 				FA93FA4729657DBA003EC402 /* CoreTabs */,
@@ -224,6 +228,7 @@
 		FA93FA3B29657BA0003EC402 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAA1995229681E100022E275 /* CoreTabsViews */,
 				FAAC42792966AACD00958BA5 /* AuthViews */,
 				FA93FA1329657B43003EC402 /* Assets.xcassets */,
 				FA93FA3E29657BB8003EC402 /* Storyboards */,
@@ -270,7 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				FA93FA4D29658253003EC402 /* LoginViewController.swift */,
-				FA93FA4F2965825A003EC402 /* RegisterViewController.swift */,
+				FA93FA4F2965825A003EC402 /* SignUpViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -316,12 +321,12 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		FAA1994C296808E30022E275 /* General */ = {
+		FAA1994C296808E30022E275 /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				FAA1994A296808930022E275 /* BaseViewController.swift */,
 			);
-			path = General;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		FAA1994D29680AD50022E275 /* Firebase */ = {
@@ -332,10 +337,19 @@
 			path = Firebase;
 			sourceTree = "<group>";
 		};
+		FAA1995229681E100022E275 /* CoreTabsViews */ = {
+			isa = PBXGroup;
+			children = (
+				FAA1995329681E2A0022E275 /* ProfileView.swift */,
+			);
+			path = CoreTabsViews;
+			sourceTree = "<group>";
+		};
 		FAAC42792966AACD00958BA5 /* AuthViews */ = {
 			isa = PBXGroup;
 			children = (
 				FAAC427A2966AB3D00958BA5 /* LoginView.swift */,
+				FAA1995029681B340022E275 /* SignUpView.swift */,
 			);
 			path = AuthViews;
 			sourceTree = "<group>";
@@ -350,7 +364,7 @@
 		FAAC427D2966B34F00958BA5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FAAC427E2966B36700958BA5 /* LoginConstants.swift */,
+				FAAC427E2966B36700958BA5 /* AuthConstants.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -606,10 +620,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA93FA5729658345003EC402 /* PostEditorViewController.swift in Sources */,
+				FAA1995129681B340022E275 /* SignUpView.swift in Sources */,
 				FA93FA5329658305003EC402 /* MessagesViewController.swift in Sources */,
-				FA93FA502965825A003EC402 /* RegisterViewController.swift in Sources */,
+				FA93FA502965825A003EC402 /* SignUpViewController.swift in Sources */,
 				FAA1994B296808930022E275 /* BaseViewController.swift in Sources */,
-				FAAC427F2966B36700958BA5 /* LoginConstants.swift in Sources */,
+				FAAC427F2966B36700958BA5 /* AuthConstants.swift in Sources */,
 				FA93FA4429657C1C003EC402 /* ProfileViewController.swift in Sources */,
 				FA93FA4029657C00003EC402 /* ExploreViewController.swift in Sources */,
 				FA93FA0F29657B41003EC402 /* HomeViewController.swift in Sources */,
@@ -623,6 +638,7 @@
 				FA93FA0D29657B41003EC402 /* SceneDelegate.swift in Sources */,
 				FA93FA5A2965850F003EC402 /* PublishPostViewController.swift in Sources */,
 				FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */,
+				FAA1995429681E2A0022E275 /* ProfileView.swift in Sources */,
 				FA93FA61296586AB003EC402 /* MainTabBarConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -791,6 +807,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Instagram Clone/Instagram Clone.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T8B4RZKP3U;
@@ -820,6 +837,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Instagram Clone/Instagram Clone.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T8B4RZKP3U;

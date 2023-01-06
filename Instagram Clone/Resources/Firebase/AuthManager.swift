@@ -16,10 +16,10 @@ class AuthManager: BaseViewController {
     
     
     //-----------------------------
-    //MARK: - Register
+    //MARK: - Sign Up
     //-----------------------------
     
-    public func register(username: String, email: String, password: String){
+    public func signUp(username: String, email: String, password: String){
         
     }
     
@@ -28,8 +28,9 @@ class AuthManager: BaseViewController {
     //-----------------------------
     //MARK: - Login
     //-----------------------------
+    
     //(Bool) -> Void
-    public func login(username: String?, email: String?, password: String, completion: @escaping (Result<Bool, Error>) -> Void){
+    public func logIn(username: String?, email: String?, password: String, completion: @escaping (Result<Bool, Error>) -> Void){
         
         //E-mail Login
         if let email {
@@ -49,6 +50,20 @@ class AuthManager: BaseViewController {
         //Username Login
         else if let username {
             print(username)
+        }
+    }
+    
+    
+    //-----------------------------
+    //MARK: - Sign Out
+    //-----------------------------
+    
+    public func signOut(){
+        do {
+            try Auth.auth().signOut()
+            print("Sign Out Success")
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
         }
     }
     
