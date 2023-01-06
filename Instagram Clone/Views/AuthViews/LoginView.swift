@@ -12,7 +12,7 @@ import SnapKit
 
 
 //MARK: - LoginView
-class LoginView: UIViewController {
+class LoginView: BaseViewController {
 
     
     //-----------------------------
@@ -185,7 +185,6 @@ class LoginView: UIViewController {
     @objc func signUpButtonPressed(){
         
     }
-    
     
     
     

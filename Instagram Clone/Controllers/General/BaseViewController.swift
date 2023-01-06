@@ -1,15 +1,15 @@
 //
-//  UIViewController.swift
+//  BaseViewController.swift
 //  Instagram Clone
 //
-//  Created by Mutlu Çalkan on 5.01.2023.
+//  Created by Mutlu Çalkan on 6.01.2023.
 //
 
+//MARK: - Frameworks
 import UIKit
 
 //MARK: - UIViewController
-extension UIViewController {
-    
+class BaseViewController: UIViewController {
     
     //-----------------------------
     //MARK: - Alert Message
@@ -34,4 +34,5 @@ extension UIViewController {
     @objc private func hideKeyboardPressed(){
         view.endEditing(true)
     }
+
 }
