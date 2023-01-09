@@ -1,5 +1,5 @@
 //
-//  ProfileView.swift
+//  SettingsView.swift
 //  Instagram Clone
 //
 //  Created by Mutlu Çalkan on 6.01.2023.
@@ -11,8 +11,9 @@ import SnapKit
 
 
 //MARK: - ProfileView
-class ProfileView: BaseViewController {
+class SettingsView: BaseViewController {
     
+    //MARK: - Properties
     lazy var signOutButton : UIButton = {
         let button = UIButton()
         button.setTitle("Sign Out", for: .normal)
@@ -23,11 +24,13 @@ class ProfileView: BaseViewController {
         return button
     }()
     
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpViews()
     }
     
+    //MARK: - Constraints
     private func setUpViews(){
         //addSubviews
         view.addSubview(signOutButton)

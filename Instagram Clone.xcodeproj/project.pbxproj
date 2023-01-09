@@ -36,7 +36,7 @@
 		FAA1994B296808930022E275 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1994A296808930022E275 /* BaseViewController.swift */; };
 		FAA1994F29680AF90022E275 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1994E29680AF90022E275 /* AuthManager.swift */; };
 		FAA1995129681B340022E275 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1995029681B340022E275 /* SignUpView.swift */; };
-		FAA1995429681E2A0022E275 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1995329681E2A0022E275 /* ProfileView.swift */; };
+		FAA1995429681E2A0022E275 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1995329681E2A0022E275 /* SettingsView.swift */; };
 		FAA19957296851950022E275 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA19956296851950022E275 /* DatabaseManager.swift */; };
 		FAA1995A296857A90022E275 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA19959296857A90022E275 /* String.swift */; };
 		FAA1995C29685E2F0022E275 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAA1995B29685E2F0022E275 /* GoogleService-Info.plist */; };
@@ -44,6 +44,8 @@
 		FAA85A35296C09560029C7C0 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA85A34296C09560029C7C0 /* MenuCell.swift */; };
 		FAA85A38296C0EAC0029C7C0 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA85A37296C0EAC0029C7C0 /* MenuModel.swift */; };
 		FAA85A3B296C1CB80029C7C0 /* TableViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA85A3A296C1CB80029C7C0 /* TableViewConstants.swift */; };
+		FAA85A3F296C1F490029C7C0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA85A3E296C1F490029C7C0 /* SettingsViewController.swift */; };
+		FAA85A41296C1F520029C7C0 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA85A40296C1F520029C7C0 /* SavedViewController.swift */; };
 		FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427A2966AB3D00958BA5 /* LoginView.swift */; };
 		FAAC427F2966B36700958BA5 /* AuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427E2966B36700958BA5 /* AuthConstants.swift */; };
 /* End PBXBuildFile section */
@@ -98,7 +100,7 @@
 		FAA1994A296808930022E275 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FAA1994E29680AF90022E275 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		FAA1995029681B340022E275 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		FAA1995329681E2A0022E275 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FAA1995329681E2A0022E275 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FAA19956296851950022E275 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		FAA19959296857A90022E275 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		FAA1995B29685E2F0022E275 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -106,6 +108,8 @@
 		FAA85A34296C09560029C7C0 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		FAA85A37296C0EAC0029C7C0 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		FAA85A3A296C1CB80029C7C0 /* TableViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewConstants.swift; sourceTree = "<group>"; };
+		FAA85A3E296C1F490029C7C0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FAA85A40296C1F520029C7C0 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 		FAAC427A2966AB3D00958BA5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FAAC427E2966B36700958BA5 /* AuthConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConstants.swift; sourceTree = "<group>"; };
 		FB39DE2C223CFE5FC108839C /* Pods-Instagram CloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram CloneTests.debug.xcconfig"; path = "Target Support Files/Pods-Instagram CloneTests/Pods-Instagram CloneTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,9 +227,8 @@
 		FA93FA3A29657B91003EC402 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FAA85A3C296C1EF90029C7C0 /* General */,
 				FAA1994C296808E30022E275 /* Base */,
-				FA93FA5129658290003EC402 /* NavigationBars */,
-				FA93FA4829657DE3003EC402 /* Auth */,
 				FA93FA4729657DBA003EC402 /* CoreTabs */,
 			);
 			path = Controllers;
@@ -235,7 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA85A33296C09220029C7C0 /* NavigationBarViews */,
-				FAA1995229681E100022E275 /* CoreTabViews */,
+				FAA1995229681E100022E275 /* SettingsMenuView */,
 				FAAC42792966AACD00958BA5 /* AuthViews */,
 				FA93FA1329657B43003EC402 /* Assets.xcassets */,
 				FA93FA3E29657BB8003EC402 /* Storyboards */,
@@ -338,12 +341,12 @@
 			path = Firebase;
 			sourceTree = "<group>";
 		};
-		FAA1995229681E100022E275 /* CoreTabViews */ = {
+		FAA1995229681E100022E275 /* SettingsMenuView */ = {
 			isa = PBXGroup;
 			children = (
-				FAA1995329681E2A0022E275 /* ProfileView.swift */,
+				FAA1995329681E2A0022E275 /* SettingsView.swift */,
 			);
-			path = CoreTabViews;
+			path = SettingsMenuView;
 			sourceTree = "<group>";
 		};
 		FAA199582968579C0022E275 /* Extensions */ = {
@@ -392,6 +395,25 @@
 				FAA85A3A296C1CB80029C7C0 /* TableViewConstants.swift */,
 			);
 			path = TableViews;
+			sourceTree = "<group>";
+		};
+		FAA85A3C296C1EF90029C7C0 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				FAA85A3D296C1F070029C7C0 /* SettingsMenu */,
+				FA93FA5129658290003EC402 /* NavigationBars */,
+				FA93FA4829657DE3003EC402 /* Auth */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		FAA85A3D296C1F070029C7C0 /* SettingsMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FAA85A3E296C1F490029C7C0 /* SettingsViewController.swift */,
+				FAA85A40296C1F520029C7C0 /* SavedViewController.swift */,
+			);
+			path = SettingsMenu;
 			sourceTree = "<group>";
 		};
 		FAAC42792966AACD00958BA5 /* AuthViews */ = {
@@ -676,7 +698,9 @@
 				FAAC427F2966B36700958BA5 /* AuthConstants.swift in Sources */,
 				FA93FA4429657C1C003EC402 /* ProfileViewController.swift in Sources */,
 				FA93FA4029657C00003EC402 /* ExploreViewController.swift in Sources */,
+				FAA85A3F296C1F490029C7C0 /* SettingsViewController.swift in Sources */,
 				FA93FA0F29657B41003EC402 /* HomeViewController.swift in Sources */,
+				FAA85A41296C1F520029C7C0 /* SavedViewController.swift in Sources */,
 				FAA85A38296C0EAC0029C7C0 /* MenuModel.swift in Sources */,
 				FA93FA0B29657B41003EC402 /* AppDelegate.swift in Sources */,
 				FAA85A32296C07560029C7C0 /* MenuViewController.swift in Sources */,
@@ -690,7 +714,7 @@
 				FAA85A3B296C1CB80029C7C0 /* TableViewConstants.swift in Sources */,
 				FA93FA0D29657B41003EC402 /* SceneDelegate.swift in Sources */,
 				FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */,
-				FAA1995429681E2A0022E275 /* ProfileView.swift in Sources */,
+				FAA1995429681E2A0022E275 /* SettingsView.swift in Sources */,
 				FA93FA61296586AB003EC402 /* MainTabBarConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

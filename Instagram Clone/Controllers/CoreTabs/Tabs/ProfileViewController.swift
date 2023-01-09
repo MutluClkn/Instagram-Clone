@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 
 //MARK: - ProfileViewController
-final class ProfileViewController: ProfileView {
+final class ProfileViewController: UIViewController {
     
     
     //-----------------------------
@@ -19,10 +19,8 @@ final class ProfileViewController: ProfileView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonActions()
         configureNavBar()
     }
-    
     
     
     //-----------------------------
@@ -38,19 +36,6 @@ final class ProfileViewController: ProfileView {
     //-----------------------------
     //MARK: - Button Actions
     //-----------------------------
-    
-    //Button Actions
-    private func buttonActions(){
-        signOutButton.addTarget(self, action: #selector(signOutButtonPressed), for: .touchUpInside)
-    }
-
-    //Login Button
-    @objc private func signOutButtonPressed(){
-        AuthManager.shared.signOut()
-        let loginVC = LoginViewController()
-        loginVC.modalPresentationStyle = .fullScreen
-        present(loginVC, animated: false)
-    }
     
     //Menu Button
     @objc private func menuButtonPressed(){

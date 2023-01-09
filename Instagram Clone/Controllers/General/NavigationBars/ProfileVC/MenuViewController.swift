@@ -59,7 +59,8 @@ final class MenuViewController: UIViewController {
     
     private func updateMenuModel(){
         let settings = [MenuModel(label: "Settings", imageName: "gearshape"),
-                        MenuModel(label: "Saved", imageName: "bookmark")
+                        MenuModel(label: "Saved", imageName: "bookmark"),
+                        MenuModel(label: "Sign Out", imageName: "power")
                         ]
         self.menuModel = settings
     }
@@ -108,6 +109,27 @@ extension MenuViewController: UITableViewDataSource {
         cell.label.text = self.menuModel[indexPath.row].label
         
         return cell
+    }
+    
+    //Did Select Row At
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            //let vc = SettingsViewController()
+            //self.navigationController?.pushViewController(vc, animated: true)
+            //self.dismiss(animated: true)
+            
+        }
+        else if indexPath.row == 1 {
+            //let vc = SavedViewController()
+            //self.navigationController?.pushViewController(vc, animated: true)
+           // self.dismiss(animated: true)
+        }
+        else if indexPath.row == 2 {
+            AuthManager.shared.signOut()
+            let vc = LoginViewController()
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: false)
+        }
     }
     
 }
