@@ -21,18 +21,18 @@ final class MainTabBarController: UITabBarController {
     private func tabBarConfiguration(){
         let homeVC = setupRootVC(vc: HomeViewController()),
             exploreVC = setupRootVC(vc: ExploreViewController()),
-            reelsVC = setupRootVC(vc: ReelsViewController()),
-            shopVC = setupRootVC(vc: ShopViewController()),
+            cameraVC = setupRootVC(vc: CameraViewController()),
+            notificationsVC = setupRootVC(vc: NotificationsViewController()),
             profileVC = setupRootVC(vc: ProfileViewController())
 
         homeVC.tabBarItem.image = UIImage(systemName: "house")
         exploreVC.tabBarItem.image = UIImage(systemName: "magnifyingglass")
-        reelsVC.tabBarItem.image = UIImage(systemName: "play.circle")
-        shopVC.tabBarItem.image = UIImage(systemName: "bag")
+        cameraVC.tabBarItem.image = UIImage(systemName: "plus.square")
+        notificationsVC.tabBarItem.image = UIImage(systemName: "heart")
         profileVC.tabBarItem.image = UIImage(systemName: "person.crop.circle")
         
         tabBar.tintColor = .label
-        setViewControllers([homeVC, exploreVC, reelsVC, shopVC, profileVC], animated: true)
+        setViewControllers([homeVC, exploreVC, cameraVC, notificationsVC, profileVC], animated: true)
     }
     
     //MARK: - Setup Root View Controllers

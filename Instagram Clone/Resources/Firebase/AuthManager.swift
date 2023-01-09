@@ -30,7 +30,6 @@ class AuthManager: BaseViewController {
             
             switch result{
             case.success(_):
-                
                 //Create a new account
                 self.auth.createUser(withEmail: email, password: password){ result, error in
                     if let error {
@@ -38,7 +37,6 @@ class AuthManager: BaseViewController {
                         return
                     }
                     if result != nil {
-                        completion(.success(true))
                         DatabaseManager.shared.insertNewUser(email: email, username: username) { result in
                             switch result{
                             case.success(_):
@@ -83,7 +81,7 @@ class AuthManager: BaseViewController {
         
         //Username Login
         else if let username {
-            print(username)
+            
         }
     }
     

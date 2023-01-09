@@ -5,9 +5,11 @@
 //  Created by Mutlu Çalkan on 4.01.2023.
 //
 
+//MARK: - Frameworks
 import UIKit
 import FirebaseAuth
 
+//MARK: - ProfileViewController
 final class ProfileViewController: ProfileView {
     
     
@@ -18,8 +20,19 @@ final class ProfileViewController: ProfileView {
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonActions()
+        configureNavBar()
     }
     
+    
+    
+    //-----------------------------
+    //MARK: - Methods
+    //-----------------------------
+    
+    private func configureNavBar(){
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "line.3.horizontal"), style: .done, target: self, action: #selector(menuButtonPressed))
+        navigationController?.navigationBar.tintColor = .label
+    }
     
 
     //-----------------------------
@@ -32,11 +45,17 @@ final class ProfileViewController: ProfileView {
     }
 
     //Login Button
-    @objc func signOutButtonPressed(){
+    @objc private func signOutButtonPressed(){
         AuthManager.shared.signOut()
         let loginVC = LoginViewController()
         loginVC.modalPresentationStyle = .fullScreen
         present(loginVC, animated: false)
+    }
+    
+    //Menu Button
+    @objc private func menuButtonPressed(){
+        let vc = MenuViewController()
+        self.present(vc, animated: true)
     }
     
 }

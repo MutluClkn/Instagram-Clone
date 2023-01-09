@@ -20,14 +20,11 @@
 		FA93FA2E29657B43003EC402 /* Instagram_CloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA2D29657B43003EC402 /* Instagram_CloneUITestsLaunchTests.swift */; };
 		FA93FA4029657C00003EC402 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA3F29657C00003EC402 /* ExploreViewController.swift */; };
 		FA93FA4429657C1C003EC402 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA4329657C1C003EC402 /* ProfileViewController.swift */; };
-		FA93FA4A29658202003EC402 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA4929658202003EC402 /* ReelsViewController.swift */; };
-		FA93FA4C29658242003EC402 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA4B29658242003EC402 /* ShopViewController.swift */; };
+		FA93FA4A29658202003EC402 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA4929658202003EC402 /* CameraViewController.swift */; };
+		FA93FA4C29658242003EC402 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA4B29658242003EC402 /* NotificationsViewController.swift */; };
 		FA93FA4E29658253003EC402 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA4D29658253003EC402 /* LoginViewController.swift */; };
 		FA93FA502965825A003EC402 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA4F2965825A003EC402 /* SignUpViewController.swift */; };
 		FA93FA5329658305003EC402 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA5229658305003EC402 /* MessagesViewController.swift */; };
-		FA93FA552965831C003EC402 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA542965831C003EC402 /* NotificationsViewController.swift */; };
-		FA93FA5729658345003EC402 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA5629658345003EC402 /* PostEditorViewController.swift */; };
-		FA93FA5A2965850F003EC402 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA592965850F003EC402 /* PublishPostViewController.swift */; };
 		FA93FA5E29658638003EC402 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA5D29658638003EC402 /* MainTabBarController.swift */; };
 		FA93FA61296586AB003EC402 /* MainTabBarConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA60296586AB003EC402 /* MainTabBarConstants.swift */; };
 		FA93FA6B2965BC4C003EC402 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FA93FA6A2965BC4C003EC402 /* FirebaseAnalytics */; };
@@ -42,9 +39,13 @@
 		FAA1995429681E2A0022E275 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1995329681E2A0022E275 /* ProfileView.swift */; };
 		FAA19957296851950022E275 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA19956296851950022E275 /* DatabaseManager.swift */; };
 		FAA1995A296857A90022E275 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA19959296857A90022E275 /* String.swift */; };
+		FAA1995C29685E2F0022E275 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAA1995B29685E2F0022E275 /* GoogleService-Info.plist */; };
+		FAA85A32296C07560029C7C0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA85A31296C07560029C7C0 /* MenuViewController.swift */; };
+		FAA85A35296C09560029C7C0 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA85A34296C09560029C7C0 /* MenuCell.swift */; };
+		FAA85A38296C0EAC0029C7C0 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA85A37296C0EAC0029C7C0 /* MenuModel.swift */; };
+		FAA85A3B296C1CB80029C7C0 /* TableViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA85A3A296C1CB80029C7C0 /* TableViewConstants.swift */; };
 		FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427A2966AB3D00958BA5 /* LoginView.swift */; };
 		FAAC427F2966B36700958BA5 /* AuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427E2966B36700958BA5 /* AuthConstants.swift */; };
-		FAAC42842967071B00958BA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAC42832967071B00958BA5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,14 +88,11 @@
 		FA93FA2D29657B43003EC402 /* Instagram_CloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_CloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FA93FA3F29657C00003EC402 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		FA93FA4329657C1C003EC402 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		FA93FA4929658202003EC402 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
-		FA93FA4B29658242003EC402 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		FA93FA4929658202003EC402 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		FA93FA4B29658242003EC402 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		FA93FA4D29658253003EC402 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA93FA4F2965825A003EC402 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FA93FA5229658305003EC402 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		FA93FA542965831C003EC402 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
-		FA93FA5629658345003EC402 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
-		FA93FA592965850F003EC402 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 		FA93FA5D29658638003EC402 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FA93FA60296586AB003EC402 /* MainTabBarConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarConstants.swift; sourceTree = "<group>"; };
 		FAA1994A296808930022E275 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -103,9 +101,13 @@
 		FAA1995329681E2A0022E275 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		FAA19956296851950022E275 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		FAA19959296857A90022E275 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FAA1995B29685E2F0022E275 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAA85A31296C07560029C7C0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FAA85A34296C09560029C7C0 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		FAA85A37296C0EAC0029C7C0 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		FAA85A3A296C1CB80029C7C0 /* TableViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewConstants.swift; sourceTree = "<group>"; };
 		FAAC427A2966AB3D00958BA5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FAAC427E2966B36700958BA5 /* AuthConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConstants.swift; sourceTree = "<group>"; };
-		FAAC42832967071B00958BA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB39DE2C223CFE5FC108839C /* Pods-Instagram CloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram CloneTests.debug.xcconfig"; path = "Target Support Files/Pods-Instagram CloneTests/Pods-Instagram CloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -222,7 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA1994C296808E30022E275 /* Base */,
-				FA93FA5129658290003EC402 /* CoreBars */,
+				FA93FA5129658290003EC402 /* NavigationBars */,
 				FA93FA4829657DE3003EC402 /* Auth */,
 				FA93FA4729657DBA003EC402 /* CoreTabs */,
 			);
@@ -232,7 +234,8 @@
 		FA93FA3B29657BA0003EC402 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FAA1995229681E100022E275 /* CoreTabsViews */,
+				FAA85A33296C09220029C7C0 /* NavigationBarViews */,
+				FAA1995229681E100022E275 /* CoreTabViews */,
 				FAAC42792966AACD00958BA5 /* AuthViews */,
 				FA93FA1329657B43003EC402 /* Assets.xcassets */,
 				FA93FA3E29657BB8003EC402 /* Storyboards */,
@@ -243,6 +246,7 @@
 		FA93FA3C29657BA4003EC402 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FAA85A36296C0E840029C7C0 /* NavigationBarModels */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -252,9 +256,9 @@
 			children = (
 				FAA199582968579C0022E275 /* Extensions */,
 				FAA1994D29680AD50022E275 /* Firebase */,
-				FAAC42832967071B00958BA5 /* GoogleService-Info.plist */,
 				FA93FA0A29657B41003EC402 /* AppDelegate.swift */,
 				FA93FA0C29657B41003EC402 /* SceneDelegate.swift */,
+				FAA1995B29685E2F0022E275 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -285,23 +289,13 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		FA93FA5129658290003EC402 /* CoreBars */ = {
+		FA93FA5129658290003EC402 /* NavigationBars */ = {
 			isa = PBXGroup;
 			children = (
-				FA93FA5229658305003EC402 /* MessagesViewController.swift */,
-				FA93FA542965831C003EC402 /* NotificationsViewController.swift */,
-				FA93FA58296584FD003EC402 /* Post */,
+				FAA85A30296C073E0029C7C0 /* ProfileVC */,
+				FAA85A2F296C07320029C7C0 /* HomeVC */,
 			);
-			path = CoreBars;
-			sourceTree = "<group>";
-		};
-		FA93FA58296584FD003EC402 /* Post */ = {
-			isa = PBXGroup;
-			children = (
-				FA93FA5629658345003EC402 /* PostEditorViewController.swift */,
-				FA93FA592965850F003EC402 /* PublishPostViewController.swift */,
-			);
-			path = Post;
+			path = NavigationBars;
 			sourceTree = "<group>";
 		};
 		FA93FA5B29658605003EC402 /* Tabs */ = {
@@ -309,8 +303,8 @@
 			children = (
 				FA93FA0E29657B41003EC402 /* HomeViewController.swift */,
 				FA93FA3F29657C00003EC402 /* ExploreViewController.swift */,
-				FA93FA4929658202003EC402 /* ReelsViewController.swift */,
-				FA93FA4B29658242003EC402 /* ShopViewController.swift */,
+				FA93FA4929658202003EC402 /* CameraViewController.swift */,
+				FA93FA4B29658242003EC402 /* NotificationsViewController.swift */,
 				FA93FA4329657C1C003EC402 /* ProfileViewController.swift */,
 			);
 			path = Tabs;
@@ -319,6 +313,7 @@
 		FA93FA5F2965866E003EC402 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				FAA85A39296C1CA80029C7C0 /* TableViews */,
 				FAAC427D2966B34F00958BA5 /* Views */,
 				FAAC427C2966B32700958BA5 /* CoreTabs */,
 				FA93FA60296586AB003EC402 /* MainTabBarConstants.swift */,
@@ -343,12 +338,12 @@
 			path = Firebase;
 			sourceTree = "<group>";
 		};
-		FAA1995229681E100022E275 /* CoreTabsViews */ = {
+		FAA1995229681E100022E275 /* CoreTabViews */ = {
 			isa = PBXGroup;
 			children = (
 				FAA1995329681E2A0022E275 /* ProfileView.swift */,
 			);
-			path = CoreTabsViews;
+			path = CoreTabViews;
 			sourceTree = "<group>";
 		};
 		FAA199582968579C0022E275 /* Extensions */ = {
@@ -357,6 +352,46 @@
 				FAA19959296857A90022E275 /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAA85A2F296C07320029C7C0 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				FA93FA5229658305003EC402 /* MessagesViewController.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		FAA85A30296C073E0029C7C0 /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				FAA85A31296C07560029C7C0 /* MenuViewController.swift */,
+			);
+			path = ProfileVC;
+			sourceTree = "<group>";
+		};
+		FAA85A33296C09220029C7C0 /* NavigationBarViews */ = {
+			isa = PBXGroup;
+			children = (
+				FAA85A34296C09560029C7C0 /* MenuCell.swift */,
+			);
+			path = NavigationBarViews;
+			sourceTree = "<group>";
+		};
+		FAA85A36296C0E840029C7C0 /* NavigationBarModels */ = {
+			isa = PBXGroup;
+			children = (
+				FAA85A37296C0EAC0029C7C0 /* MenuModel.swift */,
+			);
+			path = NavigationBarModels;
+			sourceTree = "<group>";
+		};
+		FAA85A39296C1CA80029C7C0 /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				FAA85A3A296C1CB80029C7C0 /* TableViewConstants.swift */,
+			);
+			path = TableViews;
 			sourceTree = "<group>";
 		};
 		FAAC42792966AACD00958BA5 /* AuthViews */ = {
@@ -505,7 +540,7 @@
 			files = (
 				FA93FA1729657B43003EC402 /* LaunchScreen.storyboard in Resources */,
 				FA93FA1429657B43003EC402 /* Assets.xcassets in Resources */,
-				FAAC42842967071B00958BA5 /* GoogleService-Info.plist in Resources */,
+				FAA1995C29685E2F0022E275 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +668,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA93FA5729658345003EC402 /* PostEditorViewController.swift in Sources */,
 				FAA1995129681B340022E275 /* SignUpView.swift in Sources */,
 				FAA1995A296857A90022E275 /* String.swift in Sources */,
 				FA93FA5329658305003EC402 /* MessagesViewController.swift in Sources */,
@@ -643,16 +677,18 @@
 				FA93FA4429657C1C003EC402 /* ProfileViewController.swift in Sources */,
 				FA93FA4029657C00003EC402 /* ExploreViewController.swift in Sources */,
 				FA93FA0F29657B41003EC402 /* HomeViewController.swift in Sources */,
+				FAA85A38296C0EAC0029C7C0 /* MenuModel.swift in Sources */,
 				FA93FA0B29657B41003EC402 /* AppDelegate.swift in Sources */,
+				FAA85A32296C07560029C7C0 /* MenuViewController.swift in Sources */,
 				FA93FA4E29658253003EC402 /* LoginViewController.swift in Sources */,
-				FA93FA4A29658202003EC402 /* ReelsViewController.swift in Sources */,
+				FA93FA4A29658202003EC402 /* CameraViewController.swift in Sources */,
 				FAA19957296851950022E275 /* DatabaseManager.swift in Sources */,
-				FA93FA552965831C003EC402 /* NotificationsViewController.swift in Sources */,
 				FA93FA5E29658638003EC402 /* MainTabBarController.swift in Sources */,
-				FA93FA4C29658242003EC402 /* ShopViewController.swift in Sources */,
+				FA93FA4C29658242003EC402 /* NotificationsViewController.swift in Sources */,
+				FAA85A35296C09560029C7C0 /* MenuCell.swift in Sources */,
 				FAA1994F29680AF90022E275 /* AuthManager.swift in Sources */,
+				FAA85A3B296C1CB80029C7C0 /* TableViewConstants.swift in Sources */,
 				FA93FA0D29657B41003EC402 /* SceneDelegate.swift in Sources */,
-				FA93FA5A2965850F003EC402 /* PublishPostViewController.swift in Sources */,
 				FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */,
 				FAA1995429681E2A0022E275 /* ProfileView.swift in Sources */,
 				FA93FA61296586AB003EC402 /* MainTabBarConstants.swift in Sources */,
