@@ -12,6 +12,9 @@
 		C60F94679C8A1AA9D390BA3D /* Pods_Instagram_CloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1572E4FB5B2ECC7921C2C6B /* Pods_Instagram_CloneTests.framework */; };
 		FA2ED9BB296D54A9004978C7 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2ED9BA296D54A9004978C7 /* NotificationsView.swift */; };
 		FA2ED9BE296D5543004978C7 /* NotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2ED9BD296D5543004978C7 /* NotificationsCell.swift */; };
+		FA2ED9C1296D5D54004978C7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2ED9C0296D5D54004978C7 /* ProfileView.swift */; };
+		FA2ED9C3296D5DB6004978C7 /* ProfileViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2ED9C2296D5DB6004978C7 /* ProfileViewConstants.swift */; };
+		FA2ED9C5296D6CED004978C7 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2ED9C4296D6CED004978C7 /* ProfileCell.swift */; };
 		FA93FA0B29657B41003EC402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA0A29657B41003EC402 /* AppDelegate.swift */; };
 		FA93FA0D29657B41003EC402 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA0C29657B41003EC402 /* SceneDelegate.swift */; };
 		FA93FA0F29657B41003EC402 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FA0E29657B41003EC402 /* HomeViewController.swift */; };
@@ -77,6 +80,9 @@
 		D1572E4FB5B2ECC7921C2C6B /* Pods_Instagram_CloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_CloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2ED9BA296D54A9004978C7 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		FA2ED9BD296D5543004978C7 /* NotificationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCell.swift; sourceTree = "<group>"; };
+		FA2ED9C0296D5D54004978C7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FA2ED9C2296D5DB6004978C7 /* ProfileViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewConstants.swift; sourceTree = "<group>"; };
+		FA2ED9C4296D6CED004978C7 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		FA93FA0729657B41003EC402 /* Instagram Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA93FA0A29657B41003EC402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA93FA0C29657B41003EC402 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 		FA2ED9B9296D548C004978C7 /* CoreTabViews */ = {
 			isa = PBXGroup;
 			children = (
+				FA2ED9BF296D5D3E004978C7 /* ProfileView */,
 				FA2ED9BC296D5517004978C7 /* NotificationsView */,
 			);
 			path = CoreTabViews;
@@ -185,6 +192,15 @@
 				FA2ED9BD296D5543004978C7 /* NotificationsCell.swift */,
 			);
 			path = NotificationsView;
+			sourceTree = "<group>";
+		};
+		FA2ED9BF296D5D3E004978C7 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				FA2ED9C0296D5D54004978C7 /* ProfileView.swift */,
+				FA2ED9C4296D6CED004978C7 /* ProfileCell.swift */,
+			);
+			path = ProfileView;
 			sourceTree = "<group>";
 		};
 		FA93F9FE29657B41003EC402 = {
@@ -433,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				FAAC427E2966B36700958BA5 /* AuthConstants.swift */,
+				FA2ED9C2296D5DB6004978C7 /* ProfileViewConstants.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -700,7 +717,9 @@
 				FA93FA0B29657B41003EC402 /* AppDelegate.swift in Sources */,
 				FAA85A32296C07560029C7C0 /* MenuViewController.swift in Sources */,
 				FA93FA4E29658253003EC402 /* LoginViewController.swift in Sources */,
+				FA2ED9C5296D6CED004978C7 /* ProfileCell.swift in Sources */,
 				FA93FA4A29658202003EC402 /* CameraViewController.swift in Sources */,
+				FA2ED9C1296D5D54004978C7 /* ProfileView.swift in Sources */,
 				FAA19957296851950022E275 /* DatabaseManager.swift in Sources */,
 				FA93FA5E29658638003EC402 /* MainTabBarController.swift in Sources */,
 				FA93FA4C29658242003EC402 /* NotificationsViewController.swift in Sources */,
@@ -710,6 +729,7 @@
 				FA2ED9BE296D5543004978C7 /* NotificationsCell.swift in Sources */,
 				FA93FA0D29657B41003EC402 /* SceneDelegate.swift in Sources */,
 				FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */,
+				FA2ED9C3296D5DB6004978C7 /* ProfileViewConstants.swift in Sources */,
 				FA93FA61296586AB003EC402 /* MainTabBarConstants.swift in Sources */,
 				FA2ED9BB296D54A9004978C7 /* NotificationsView.swift in Sources */,
 			);

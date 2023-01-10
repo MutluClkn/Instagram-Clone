@@ -23,6 +23,7 @@ class NotificationsCell: UITableViewCell {
 
     lazy var image : UIImageView = {
         let image = UIImageView()
+        image.contentMode = .scaleAspectFit
         return image
     }()
     
@@ -31,6 +32,7 @@ class NotificationsCell: UITableViewCell {
         label.numberOfLines = 0
         label.textColor = .label
         label.font = .systemFont(ofSize: 14, weight: .semibold)
+        label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -40,6 +42,7 @@ class NotificationsCell: UITableViewCell {
         label.numberOfLines = 0
         label.textColor = .label
         label.font = .systemFont(ofSize: 14, weight: .regular)
+        label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -77,7 +80,7 @@ class NotificationsCell: UITableViewCell {
         
         //Username Label
         username.snp.makeConstraints { make in
-            make.top.equalTo(image.snp_topMargin)
+            make.top.equalTo(contentView).offset(15)
             make.trailing.equalTo(contentView).offset(-20)
             make.left.equalTo(image.snp_rightMargin).offset(25)
         }

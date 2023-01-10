@@ -43,6 +43,7 @@ extension NotificationsViewController: UITableViewDataSource{
         
         cell.username.text = "Title"
         cell.overview.text = "Description"
+        cell.image.image = UIImage(systemName: "person")
         
         return cell
     }
