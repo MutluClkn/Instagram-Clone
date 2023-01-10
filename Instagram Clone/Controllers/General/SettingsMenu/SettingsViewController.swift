@@ -19,26 +19,6 @@ final class SettingsViewController: SettingsView {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        
-        buttonActions()
-    }
-    
 
-    //-----------------------------
-    //MARK: - Button Actions
-    //-----------------------------
-    
-    //Button Actions
-    private func buttonActions(){
-        signOutButton.addTarget(self, action: #selector(signOutButtonPressed), for: .touchUpInside)
     }
-
-    //Login Button
-    @objc private func signOutButtonPressed(){
-        AuthManager.shared.signOut()
-        let loginVC = LoginViewController()
-        loginVC.modalPresentationStyle = .fullScreen
-        present(loginVC, animated: false)
-    }
-
 }

@@ -91,11 +91,12 @@ class AuthManager: BaseViewController {
     //MARK: - Sign Out
     //-----------------------------
     
-    public func signOut(){
+    public func signOut(completion: @escaping (Bool) -> Void){
         do {
             try auth.signOut()
-            print("Sign Out Success")
+            completion(true)
         } catch let signOutError as NSError {
+            completion(false)
             print("Error signing out: %@", signOutError)
         }
     }

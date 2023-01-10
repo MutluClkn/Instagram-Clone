@@ -22,6 +22,12 @@ class BaseViewController: UIViewController {
         self.present(alertController, animated: true)
     }
     
+    func confirmAlertSheet(alertTitle: String, alertMesssage: String, actionTitle: String, style: UIAlertAction.Style ,handler: ((UIAlertAction) -> Void)?){
+        let alertController = UIAlertController(title: alertTitle, message: alertMesssage, preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        alertController.addAction(UIAlertAction(title: actionTitle, style: style, handler: handler))
+        self.present(alertController, animated: true)
+    }
     
     //-----------------------------
     //MARK: - Hide Keyboard

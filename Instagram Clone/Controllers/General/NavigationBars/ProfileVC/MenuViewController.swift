@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: - MenuViewController
-final class MenuViewController: UIViewController {
+final class MenuViewController: BaseViewController {
     
     
     //-----------------------------
@@ -125,10 +125,24 @@ extension MenuViewController: UITableViewDataSource {
            // self.dismiss(animated: true)
         }
         else if indexPath.row == 2 {
-            AuthManager.shared.signOut()
-            let vc = LoginViewController()
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: false)
+            confirmAlertSheet(alertTitle: "Sign Out", alertMesssage: "Are you sure you want to sign out?", actionTitle: "Sign Out", style: .destructive) { _ in
+                AuthManager.shared.signOut { success in
+                    if success{
+                        let loginVC = LoginViewController()
+                        loginVC.modalPresentationStyle = .fullScreen
+                        self.present(loginVC, animated: true, completion: {
+                            self.navigationController?.popToRootViewController(animated: true)
+                            self.tabBarController?.selectedIndex = 0
+                        })
+                    }else {
+                        fatalError("Sign out failure.")
+                    }
+                }
+                
+            }
+            
+            
+           
         }
     }
     
