@@ -9,7 +9,7 @@
 import UIKit
 
 //MARK: - ExploreView
-class ExploreView: BaseViewController {
+class ExploreView: UIViewController {
     
     //-----------------------------
     //MARK: - Properties
@@ -21,7 +21,7 @@ class ExploreView: BaseViewController {
         return search
     }()
     
-    let exploreCollectionView : UICollectionView = {
+    lazy var exploreCollectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)

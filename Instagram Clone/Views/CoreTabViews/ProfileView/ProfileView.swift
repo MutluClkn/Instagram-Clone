@@ -147,7 +147,7 @@ class ProfileView: BaseViewController {
         return view
     }()
     
-    let profileCollectionView : UICollectionView = {
+    lazy var profileCollectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)

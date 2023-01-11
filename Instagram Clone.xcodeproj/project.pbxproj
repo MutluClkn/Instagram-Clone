@@ -52,6 +52,9 @@
 		FAAC427F2966B36700958BA5 /* AuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427E2966B36700958BA5 /* AuthConstants.swift */; };
 		FAB23444296EACFC00A08C40 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB23443296EACFC00A08C40 /* ExploreView.swift */; };
 		FAB23446296EBCD800A08C40 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB23445296EBCD800A08C40 /* ExploreCell.swift */; };
+		FAB23449296ED74A00A08C40 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB23448296ED74A00A08C40 /* HomeView.swift */; };
+		FAB2344B296EDDDA00A08C40 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2344A296EDDDA00A08C40 /* StorageManager.swift */; };
+		FAB2344D296EE27D00A08C40 /* HomeFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2344C296EE27D00A08C40 /* HomeFeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +123,9 @@
 		FAAC427E2966B36700958BA5 /* AuthConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConstants.swift; sourceTree = "<group>"; };
 		FAB23443296EACFC00A08C40 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		FAB23445296EBCD800A08C40 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		FAB23448296ED74A00A08C40 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FAB2344A296EDDDA00A08C40 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		FAB2344C296EE27D00A08C40 /* HomeFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedCell.swift; sourceTree = "<group>"; };
 		FB39DE2C223CFE5FC108839C /* Pods-Instagram CloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram CloneTests.debug.xcconfig"; path = "Target Support Files/Pods-Instagram CloneTests/Pods-Instagram CloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +189,7 @@
 		FA2ED9B9296D548C004978C7 /* CoreTabViews */ = {
 			isa = PBXGroup;
 			children = (
+				FAB23447296ED71600A08C40 /* HomeView */,
 				FAB23442296EACD600A08C40 /* ExploreView */,
 				FA2ED9BF296D5D3E004978C7 /* ProfileView */,
 				FA2ED9BC296D5517004978C7 /* NotificationsView */,
@@ -373,6 +380,7 @@
 			children = (
 				FAA1994E29680AF90022E275 /* AuthManager.swift */,
 				FAA19956296851950022E275 /* DatabaseManager.swift */,
+				FAB2344A296EDDDA00A08C40 /* StorageManager.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -466,6 +474,15 @@
 				FAB23445296EBCD800A08C40 /* ExploreCell.swift */,
 			);
 			path = ExploreView;
+			sourceTree = "<group>";
+		};
+		FAB23447296ED71600A08C40 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				FAB23448296ED74A00A08C40 /* HomeView.swift */,
+				FAB2344C296EE27D00A08C40 /* HomeFeedCell.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -734,11 +751,13 @@
 				FAA85A32296C07560029C7C0 /* MenuViewController.swift in Sources */,
 				FA93FA4E29658253003EC402 /* LoginViewController.swift in Sources */,
 				FA2ED9C5296D6CED004978C7 /* ProfileCell.swift in Sources */,
+				FAB23449296ED74A00A08C40 /* HomeView.swift in Sources */,
 				FA93FA4A29658202003EC402 /* CameraViewController.swift in Sources */,
 				FA2ED9C1296D5D54004978C7 /* ProfileView.swift in Sources */,
 				FAA19957296851950022E275 /* DatabaseManager.swift in Sources */,
 				FA93FA5E29658638003EC402 /* MainTabBarController.swift in Sources */,
 				FA93FA4C29658242003EC402 /* NotificationsViewController.swift in Sources */,
+				FAB2344D296EE27D00A08C40 /* HomeFeedCell.swift in Sources */,
 				FAA85A35296C09560029C7C0 /* MenuCell.swift in Sources */,
 				FAA1994F29680AF90022E275 /* AuthManager.swift in Sources */,
 				FAA85A3B296C1CB80029C7C0 /* TableViewConstants.swift in Sources */,
@@ -748,6 +767,7 @@
 				FA2ED9C3296D5DB6004978C7 /* ProfileViewConstants.swift in Sources */,
 				FA93FA61296586AB003EC402 /* MainTabBarConstants.swift in Sources */,
 				FA2ED9BB296D54A9004978C7 /* NotificationsView.swift in Sources */,
+				FAB2344B296EDDDA00A08C40 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

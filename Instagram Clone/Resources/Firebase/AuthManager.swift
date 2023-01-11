@@ -11,7 +11,7 @@ import FirebaseAuth
 
 
 //MARK: - AuthManager
-class AuthManager: BaseViewController {
+final class AuthManager: BaseViewController {
     //Shared
     static let shared = AuthManager()
     //Auth

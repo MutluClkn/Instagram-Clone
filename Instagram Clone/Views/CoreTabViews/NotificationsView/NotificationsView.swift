@@ -31,6 +31,8 @@ class NotificationsView: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        
+        //TableView
         view.addSubview(tableView)
     }
     override func viewDidLayoutSubviews() {

@@ -9,7 +9,7 @@
 import FirebaseDatabase
 
 //MARK: - DatabaseManager
-public class DatabaseManager {
+public final class DatabaseManager {
     
     //Shared
     static let shared = DatabaseManager()
