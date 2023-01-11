@@ -30,7 +30,13 @@ class ProfileView: BaseViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    
+    /*
+    private lazy var contentViewForCollection : UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    */
     lazy var profilePhoto : UIImageView = {
        let image = UIImageView()
         image.contentMode = .scaleAspectFit
@@ -141,7 +147,7 @@ class ProfileView: BaseViewController {
         return view
     }()
     
-    lazy var profileCollectionView : UICollectionView = {
+    let profileCollectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -158,8 +164,12 @@ class ProfileView: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        contentView.backgroundColor = .systemBackground
         
+        //Constraints
         setupConstraints()
+
+
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -226,10 +236,13 @@ class ProfileView: BaseViewController {
             make.right.equalTo(contentView.snp_rightMargin).offset(-10)
         }
         
+        
         //Collection View
         profileCollectionView.snp.makeConstraints { make in
             make.top.equalTo(profileDescription.snp_bottomMargin).offset(30)
-            make.leading.trailing.bottom.equalTo(contentView.safeAreaLayoutGuide)
+            make.left.equalTo(contentView.snp_leftMargin)
+            make.right.equalTo(contentView.snp_rightMargin)
+            make.bottom.equalTo(contentView.snp_bottomMargin)
         }
         
     }

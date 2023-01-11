@@ -1,18 +1,19 @@
 //
-//  ProfileCell.swift
+//  ExploreCell.swift
 //  Instagram Clone
 //
-//  Created by Mutlu Çalkan on 10.01.2023.
+//  Created by Mutlu Çalkan on 11.01.2023.
 //
 
 //MARK: - Frameworks
 import UIKit
 
-//MARK: - ProfileCell
-class ProfileCell: UICollectionViewCell {
+//MARK: - ExploreCell
+class ExploreCell: UICollectionViewCell {
     
     //MARK: - Identifier
-    static let identifier = "ProfileCell"
+    static let identifier = "ExploreCell"
+    
     
     //-----------------------------
     //MARK: - Properties

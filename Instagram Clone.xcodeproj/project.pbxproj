@@ -50,6 +50,8 @@
 		FAA85A3B296C1CB80029C7C0 /* TableViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA85A3A296C1CB80029C7C0 /* TableViewConstants.swift */; };
 		FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427A2966AB3D00958BA5 /* LoginView.swift */; };
 		FAAC427F2966B36700958BA5 /* AuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC427E2966B36700958BA5 /* AuthConstants.swift */; };
+		FAB23444296EACFC00A08C40 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB23443296EACFC00A08C40 /* ExploreView.swift */; };
+		FAB23446296EBCD800A08C40 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB23445296EBCD800A08C40 /* ExploreCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,8 @@
 		FAA85A3A296C1CB80029C7C0 /* TableViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewConstants.swift; sourceTree = "<group>"; };
 		FAAC427A2966AB3D00958BA5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FAAC427E2966B36700958BA5 /* AuthConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConstants.swift; sourceTree = "<group>"; };
+		FAB23443296EACFC00A08C40 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		FAB23445296EBCD800A08C40 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		FB39DE2C223CFE5FC108839C /* Pods-Instagram CloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram CloneTests.debug.xcconfig"; path = "Target Support Files/Pods-Instagram CloneTests/Pods-Instagram CloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +183,7 @@
 		FA2ED9B9296D548C004978C7 /* CoreTabViews */ = {
 			isa = PBXGroup;
 			children = (
+				FAB23442296EACD600A08C40 /* ExploreView */,
 				FA2ED9BF296D5D3E004978C7 /* ProfileView */,
 				FA2ED9BC296D5517004978C7 /* NotificationsView */,
 			);
@@ -454,6 +459,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		FAB23442296EACD600A08C40 /* ExploreView */ = {
+			isa = PBXGroup;
+			children = (
+				FAB23443296EACFC00A08C40 /* ExploreView.swift */,
+				FAB23445296EBCD800A08C40 /* ExploreCell.swift */,
+			);
+			path = ExploreView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -705,9 +719,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA1995129681B340022E275 /* SignUpView.swift in Sources */,
+				FAB23444296EACFC00A08C40 /* ExploreView.swift in Sources */,
 				FAA1995A296857A90022E275 /* String.swift in Sources */,
 				FA93FA5329658305003EC402 /* MessagesViewController.swift in Sources */,
 				FA93FA502965825A003EC402 /* SignUpViewController.swift in Sources */,
+				FAB23446296EBCD800A08C40 /* ExploreCell.swift in Sources */,
 				FAA1994B296808930022E275 /* BaseViewController.swift in Sources */,
 				FAAC427F2966B36700958BA5 /* AuthConstants.swift in Sources */,
 				FA93FA4429657C1C003EC402 /* ProfileViewController.swift in Sources */,
