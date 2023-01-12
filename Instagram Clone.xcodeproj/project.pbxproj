@@ -55,6 +55,10 @@
 		FAB23449296ED74A00A08C40 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB23448296ED74A00A08C40 /* HomeView.swift */; };
 		FAB2344B296EDDDA00A08C40 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2344A296EDDDA00A08C40 /* StorageManager.swift */; };
 		FAB2344D296EE27D00A08C40 /* HomeFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2344C296EE27D00A08C40 /* HomeFeedCell.swift */; };
+		FAC44C91297016D10036C98A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC44C90297016D10036C98A /* SettingsViewController.swift */; };
+		FAC44C93297016E10036C98A /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC44C92297016E10036C98A /* EditProfileViewController.swift */; };
+		FAC44C95297016F40036C98A /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC44C94297016F40036C98A /* SavedViewController.swift */; };
+		FAC44C9C297049F50036C98A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC44C9B297049F50036C98A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +130,10 @@
 		FAB23448296ED74A00A08C40 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FAB2344A296EDDDA00A08C40 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		FAB2344C296EE27D00A08C40 /* HomeFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedCell.swift; sourceTree = "<group>"; };
+		FAC44C90297016D10036C98A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FAC44C92297016E10036C98A /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		FAC44C94297016F40036C98A /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		FAC44C9B297049F50036C98A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FB39DE2C223CFE5FC108839C /* Pods-Instagram CloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram CloneTests.debug.xcconfig"; path = "Target Support Files/Pods-Instagram CloneTests/Pods-Instagram CloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -280,8 +288,8 @@
 		FA93FA3B29657BA0003EC402 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAC44C99297049B40036C98A /* GeneralViews */,
 				FA2ED9B9296D548C004978C7 /* CoreTabViews */,
-				FAA85A33296C09220029C7C0 /* NavigationBarViews */,
 				FAAC42792966AACD00958BA5 /* AuthViews */,
 				FA93FA1329657B43003EC402 /* Assets.xcassets */,
 				FA93FA3E29657BB8003EC402 /* Storyboards */,
@@ -436,6 +444,7 @@
 		FAA85A3C296C1EF90029C7C0 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				FAC44C8F2970169C0036C98A /* ProfileMenu */,
 				FA93FA5129658290003EC402 /* NavigationBars */,
 				FA93FA4829657DE3003EC402 /* Auth */,
 			);
@@ -483,6 +492,33 @@
 				FAB2344C296EE27D00A08C40 /* HomeFeedCell.swift */,
 			);
 			path = HomeView;
+			sourceTree = "<group>";
+		};
+		FAC44C8F2970169C0036C98A /* ProfileMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FAC44C90297016D10036C98A /* SettingsViewController.swift */,
+				FAC44C92297016E10036C98A /* EditProfileViewController.swift */,
+				FAC44C94297016F40036C98A /* SavedViewController.swift */,
+			);
+			path = ProfileMenu;
+			sourceTree = "<group>";
+		};
+		FAC44C99297049B40036C98A /* GeneralViews */ = {
+			isa = PBXGroup;
+			children = (
+				FAC44C9A297049DD0036C98A /* ProfileMenuViews */,
+				FAA85A33296C09220029C7C0 /* NavigationBarViews */,
+			);
+			path = GeneralViews;
+			sourceTree = "<group>";
+		};
+		FAC44C9A297049DD0036C98A /* ProfileMenuViews */ = {
+			isa = PBXGroup;
+			children = (
+				FAC44C9B297049F50036C98A /* SettingsView.swift */,
+			);
+			path = ProfileMenuViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -748,6 +784,7 @@
 				FA93FA0F29657B41003EC402 /* HomeViewController.swift in Sources */,
 				FAA85A38296C0EAC0029C7C0 /* MenuModel.swift in Sources */,
 				FA93FA0B29657B41003EC402 /* AppDelegate.swift in Sources */,
+				FAC44C93297016E10036C98A /* EditProfileViewController.swift in Sources */,
 				FAA85A32296C07560029C7C0 /* MenuViewController.swift in Sources */,
 				FA93FA4E29658253003EC402 /* LoginViewController.swift in Sources */,
 				FA2ED9C5296D6CED004978C7 /* ProfileCell.swift in Sources */,
@@ -764,10 +801,13 @@
 				FA2ED9BE296D5543004978C7 /* NotificationsCell.swift in Sources */,
 				FA93FA0D29657B41003EC402 /* SceneDelegate.swift in Sources */,
 				FAAC427B2966AB3D00958BA5 /* LoginView.swift in Sources */,
+				FAC44C95297016F40036C98A /* SavedViewController.swift in Sources */,
+				FAC44C91297016D10036C98A /* SettingsViewController.swift in Sources */,
 				FA2ED9C3296D5DB6004978C7 /* ProfileViewConstants.swift in Sources */,
 				FA93FA61296586AB003EC402 /* MainTabBarConstants.swift in Sources */,
 				FA2ED9BB296D54A9004978C7 /* NotificationsView.swift in Sources */,
 				FAB2344B296EDDDA00A08C40 /* StorageManager.swift in Sources */,
+				FAC44C9C297049F50036C98A /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,7 @@ class ProfileView: BaseViewController {
     //MARK: - Properties
     //-----------------------------
     
+    //Scroll View
     private lazy var scrollView : UIScrollView = {
         let view = UIScrollView()
         view.delaysContentTouches = false
@@ -25,18 +26,14 @@ class ProfileView: BaseViewController {
         return view
     }()
     
+    //Content View
     private lazy var contentView : UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    /*
-    private lazy var contentViewForCollection : UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    */
+    
+    //Profile Photo
     lazy var profilePhoto : UIImageView = {
        let image = UIImageView()
         image.contentMode = .scaleAspectFit
@@ -44,6 +41,7 @@ class ProfileView: BaseViewController {
         return image
     }()
     
+    //Username
     lazy var username : UILabel = {
         let label = UILabel()
         label.tintColor = .label
@@ -52,6 +50,7 @@ class ProfileView: BaseViewController {
         return label
     }()
     
+    //Profile Description
     lazy var profileDescription : UILabel = {
         let label = UILabel()
         label.tintColor = .label
@@ -60,6 +59,7 @@ class ProfileView: BaseViewController {
         return label
     }()
     
+    //Posts Label
     private lazy var postsText : UILabel = {
         let label = UILabel()
         label.tintColor = .label
@@ -69,6 +69,7 @@ class ProfileView: BaseViewController {
         return label
     }()
     
+    //Posts Count
     lazy var postsCount : UILabel = {
         let label = UILabel()
         label.tintColor = .label
@@ -77,6 +78,7 @@ class ProfileView: BaseViewController {
         return label
     }()
     
+    //Followers Label
     private lazy var followersText : UILabel = {
         let label = UILabel()
         label.tintColor = .label
@@ -86,6 +88,7 @@ class ProfileView: BaseViewController {
         return label
     }()
     
+    //Followers Count
     lazy var followersCount : UILabel = {
         let label = UILabel()
         label.tintColor = .label
@@ -94,6 +97,7 @@ class ProfileView: BaseViewController {
         return label
     }()
     
+    //Following Label
     private lazy var followingText : UILabel = {
         let label = UILabel()
         label.tintColor = .label
@@ -103,6 +107,7 @@ class ProfileView: BaseViewController {
         return label
     }()
     
+    //Following Count
     lazy var followingCount : UILabel = {
         let label = UILabel()
         label.tintColor = .label
@@ -111,6 +116,7 @@ class ProfileView: BaseViewController {
         return label
     }()
     
+    //Posts Stack View
     private lazy var postStackView : UIStackView = {
        let view = UIStackView(arrangedSubviews: [postsCount, postsText])
         view.axis = .vertical
@@ -120,6 +126,7 @@ class ProfileView: BaseViewController {
         return view
     }()
     
+    //Followers Stack View
     private lazy var followerStackView : UIStackView = {
        let view = UIStackView(arrangedSubviews: [followersCount, followersText])
         view.axis = .vertical
@@ -129,6 +136,7 @@ class ProfileView: BaseViewController {
         return view
     }()
     
+    //Following Stack View
     private lazy var followingStackView : UIStackView = {
        let view = UIStackView(arrangedSubviews: [followingCount, followingText])
         view.axis = .vertical
@@ -138,7 +146,8 @@ class ProfileView: BaseViewController {
         return view
     }()
     
-    private lazy var profileCondition : UIStackView = {
+    //Profile Status Stack View - (Posts, Followers, Followings Counts)
+    private lazy var profileStatus : UIStackView = {
        let view = UIStackView(arrangedSubviews: [postStackView, followerStackView, followingStackView])
         view.axis = .horizontal
         view.distribution = .equalCentering
@@ -147,6 +156,7 @@ class ProfileView: BaseViewController {
         return view
     }()
     
+    //Collection View
     lazy var profileCollectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -188,7 +198,7 @@ class ProfileView: BaseViewController {
         contentView.addSubview(profilePhoto)
         contentView.addSubview(username)
         contentView.addSubview(profileDescription)
-        contentView.addSubview(profileCondition)
+        contentView.addSubview(profileStatus)
         contentView.addSubview(profileCollectionView)
         
         
@@ -231,7 +241,7 @@ class ProfileView: BaseViewController {
         }
         
         //StackView
-        profileCondition.snp.makeConstraints { make in
+        profileStatus.snp.makeConstraints { make in
             make.centerY.equalTo(profilePhoto.snp_centerYWithinMargins)
             make.right.equalTo(contentView.snp_rightMargin).offset(-10)
         }

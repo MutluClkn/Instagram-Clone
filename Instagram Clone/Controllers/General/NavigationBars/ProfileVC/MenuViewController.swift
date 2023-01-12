@@ -25,7 +25,10 @@ final class MenuViewController: BaseViewController {
     
     //Menu Model
     var menuModel = [MenuModel]()
-
+    
+    //Selected Menu Index
+    var indexSelectedCallback: ((String) -> ())?
+    
     
     
     //-----------------------------
@@ -57,14 +60,15 @@ final class MenuViewController: BaseViewController {
     //MARK: - Methods
     //-----------------------------
     
+    //Update Menu Model
     private func updateMenuModel(){
-        let settings = [MenuModel(label: "Settings", imageName: "gearshape"),
-                        MenuModel(label: "Saved", imageName: "bookmark"),
-                        MenuModel(label: "Sign Out", imageName: "power")
-                        ]
-        self.menuModel = settings
+        self.menuModel.append(contentsOf: [
+            MenuModel(label: "Settings", imageName: "gearshape"),
+            MenuModel(label: "Edit Profile", imageName: "person.text.rectangle"),
+            MenuModel(label: "Saved", imageName: "bookmark")
+        ])
     }
-
+    
 }
 
 //-----------------------------
@@ -113,39 +117,12 @@ extension MenuViewController: UITableViewDataSource {
     
     //Did Select Row At
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            //let vc = SettingsViewController()
-            //self.navigationController?.pushViewController(vc, animated: true)
-            //self.dismiss(animated: true)
-            
-        }
-        else if indexPath.row == 1 {
-            //let vc = SavedViewController()
-            //self.navigationController?.pushViewController(vc, animated: true)
-           // self.dismiss(animated: true)
-        }
-        else if indexPath.row == 2 {
-            confirmAlertSheet(alertTitle: "Sign Out", alertMesssage: "Are you sure you want to sign out?", actionTitle: "Sign Out", style: .destructive) { _ in
-                AuthManager.shared.signOut { success in
-                    if success{
-                        let loginVC = LoginViewController()
-                        loginVC.modalPresentationStyle = .fullScreen
-                        self.present(loginVC, animated: true, completion: {
-                            self.navigationController?.popToRootViewController(animated: true)
-                            self.tabBarController?.selectedIndex = 0
-                        })
-                    }else {
-                        fatalError("Sign out failure.")
-                    }
-                }
-                
-            }
-            
-            
-           
-        }
+        
+        let index = self.menuModel[indexPath.row].label
+        indexSelectedCallback?(index)
+        self.dismiss(animated: true, completion: nil)
+        
     }
-    
 }
 
 //-----------------------------
